@@ -60,7 +60,7 @@ In other words, the output of the query is the intersect of the `SELECT` and `WH
 
 Dimensions are attributes of our data, they are not aggregated. Meanwhile metrics are quantitative measurements that are aggregated.
 
-The `GROUPBY` clause is added to the end of a query that contains aggregation functions in order to distinguish between the dimensions and metrics in the query.
+The `GROUP BY` clause is added to the end of a query that contains aggregation functions in order to distinguish between the dimensions and metrics in the query.
 
 Here's an example using the same table from above.
 
@@ -102,6 +102,6 @@ The COUNT function can accept a variety of parameters that modify the way it ope
 
 ## Additional Useful Syntax
 
-`IN` - enables the specification of multiple values to satisfy a criterion in a **WHERE** clause.
-`LIMIT XX` - limits the number of rows returned by a query to the first XX number of rows in the result set.
-`ORDER BY <column_name> ASC|DESC` - sorts the output by one or more of the columns in the resulting table (defaults to ASC)
+`IN` - enables the specification of multiple values to satisfy a criterion in a **WHERE** clause.  
+`LIMIT XX` - limits the number of rows returned by a query to the first XX number of rows in the result set.  
+`ORDER BY <column_name> ASC|DESC` - sorts the output by one or more of the columns in the resulting table (defaults to ASC)  
