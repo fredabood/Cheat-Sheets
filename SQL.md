@@ -42,9 +42,9 @@ For example
 
 ### Query:
 
-**SELECT** year, person
-**FROM** income_table
-**WHERE** income > 11,000
+**SELECT** year, person  
+**FROM** income_table  
+**WHERE** income > 11,000  
 
 ### Results:
 
@@ -66,13 +66,13 @@ Here's an example using the same table from above.
 
 ### Query:
 
-**SELECT**  person
-            , COUNT(DISTINCT year) AS years
-            , SUM(income) AS money_earned
-**FROM**    income_table
-**WHERE**   year > 2016
-**AND**     income > 10,000
-**GROUP BY** person
+**SELECT**  person  
+            , COUNT(DISTINCT year) AS years  
+            , SUM(income) AS money_earned  
+**FROM**    income_table  
+**WHERE**   year > 2016  
+**AND**     income > 10,000  
+**GROUP BY** person  
 
 ### Results:
 
