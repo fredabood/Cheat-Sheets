@@ -30,7 +30,6 @@ For example
 
 | Year | Person | Income |
 | :--- | :----- | :----- |
-
 | 2016 | James  | 10,000 |
 | 2016 | Kate   | 11,000 |
 | 2016 | Sam    | 10,000 |
