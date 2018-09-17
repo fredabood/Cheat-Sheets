@@ -105,3 +105,20 @@ The COUNT function can accept a variety of parameters that modify the way it ope
 `IN` - enables the specification of multiple values to satisfy a criterion in a **WHERE** clause.  
 `LIMIT XX` - limits the number of rows returned by a query to the first XX number of rows in the result set.  
 `ORDER BY <column_name> ASC|DESC` - sorts the output by one or more of the columns in the resulting table (defaults to ASC)  
+
+## SQL Joins
+
+Joins are used to pull data from multiple tables into one, combined, output. They match rows from the tables based on one or more related columns, or keys.
+
+Slight modifications allow joins to be used to match data based on several methodologies.
+
+It's important to consider which type of join correctly represents the data you're trying to pull. Incorrectly joining data can result in the wrong data being pulled.
+
+A `VLOOKUP` is the equivalent of a `LEFT JOIN` in Excel.
+
+Note:
+* `LEFT JOIN` = `LEFT OUTER JOIN`
+* `RIGHT JOIN` = `LEFT OUTER RIGHT`
+* `INNER JOIN` = `JOIN`
+
+![alt text](https://i.redditmedia.com/M5QHWsp2vgZ-3QDZ4m-qS58lsOUgDNHau8trSFzS8H0.jpg?s=235bc13e001fbb7c616d3fb6ba169f9f)
