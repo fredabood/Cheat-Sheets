@@ -121,4 +121,4 @@ Note:
 * `RIGHT JOIN` = `LEFT OUTER RIGHT`
 * `INNER JOIN` = `JOIN`
 
-![alt text](.img/joins.jpg =483×380)
+![alt text](.img/joins.jpg)
