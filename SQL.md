@@ -121,4 +121,4 @@ Note:
 * `RIGHT JOIN` = `LEFT OUTER RIGHT`
 * `INNER JOIN` = `JOIN`
 
-![alt text](https://i.redditmedia.com/M5QHWsp2vgZ-3QDZ4m-qS58lsOUgDNHau8trSFzS8H0.jpg?s=235bc13e001fbb7c616d3fb6ba169f9f =483×380)
+![alt text](https://i.redditmedia.com/M5QHWsp2vgZ-3QDZ4m-qS58lsOUgDNHau8trSFzS8H0.jpg?s=235bc13e001fbb7c616d3fb6ba169f9f=483×380)
