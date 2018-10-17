@@ -121,4 +121,10 @@ Note:
 * `RIGHT JOIN` = `LEFT OUTER RIGHT`
 * `INNER JOIN` = `JOIN`
 
-![alt text](./img/joins.jpg)
+![SQL Joins](./img/joins.jpg)
+
+## Aliases
+
+When you're only using one table and you call on a column, it's understood what table the field is coming from. However, when you're calling on multiple tables in one query (as is the case when you're joining two tables)
+
+Aliases are used so you don't have to use a table's full name every time you call on it or a column it contains.
