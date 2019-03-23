@@ -217,7 +217,5 @@ done
 ```
 
 # Sources
-[Rock the Command Line](https://towardsdatascience.com/rock-the-command-line-52c4b2ea34b7)
-[Command Line Tricks For Data Scientists](https://medium.com/@kadek/command-line-tricks-for-data-scientists-c98e0abe5da)
-[How can I list and edit all defined aliases in Terminal?](https://apple.stackexchange.com/questions/25352/how-can-i-list-and-edit-all-defined-aliases-in-terminal)
-[alias vs. function in bash scripts](https://askubuntu.com/questions/163882/alias-vs-function-in-bash-scripts)
+* [Rock the Command Line](https://towardsdatascience.com/rock-the-command-line-52c4b2ea34b7)
+* [Command Line Tricks For Data Scientists](https://medium.com/@kadek/command-line-tricks-for-data-scientists-c98e0abe5da)
