@@ -169,6 +169,7 @@ exit # log out of current session
 ```bash
 export VARIABLE=value # stores value as variable for this session
 ```
+
 ### Aliases
 Think of aliases as nicknames. You might have a command that you perform a lot but want to shorten.
 ```bash
@@ -178,6 +179,12 @@ alias desktop="cd ~/Desktop" # `desktop` will now execute `cd ~/Desktop`
 ### Functions
 Functions contains logic. In a function, you might make calls to several different programs. Here's a simple echo function
 
+This function executes a git add/commit/pull/push all at once, with commit message "$1"
+```bash
+function git_push() {
+	git add -A; git commit -m "$1"; git pull --rebase; git push;
+}
+```
 
 ### Control Flow
 
@@ -191,12 +198,14 @@ else
   # do something else
 fi
 ```
+
 #### For Loops
 ```bash
 for item in iterable; do
   # do something
 done
 ```
+
 #### While Loops
 ```bash
 while conditional; do
