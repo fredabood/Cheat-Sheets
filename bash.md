@@ -164,3 +164,48 @@ ctrl+r # reverse lookup of previous commands
 !! # repeat last command
 exit # log out of current session
 ```
+
+### Variables
+```bash
+export VARIABLE=value # stores value as variable for this session
+```
+### Aliases
+Think of aliases as nicknames. You might have a command that you perform a lot but want to shorten.
+```bash
+alias desktop="cd ~/Desktop" # `desktop` will now execute `cd ~/Desktop`
+```
+
+### Functions
+Functions contains logic. In a function, you might make calls to several different programs. Here's a simple echo function
+
+
+### Control Flow
+
+#### If... Else...
+```bash
+if conditional; then
+  # do something
+elif different_conditional; then
+  # do something else
+else
+  # do something else
+fi
+```
+#### For Loops
+```bash
+for item in iterable; do
+  # do something
+done
+```
+#### While Loops
+```bash
+while conditional; do
+	# do something
+done
+```
+
+# Sources
+[Rock the Command Line](https://towardsdatascience.com/rock-the-command-line-52c4b2ea34b7)
+[Command Line Tricks For Data Scientists](https://medium.com/@kadek/command-line-tricks-for-data-scientists-c98e0abe5da)
+[How can I list and edit all defined aliases in Terminal?](https://apple.stackexchange.com/questions/25352/how-can-i-list-and-edit-all-defined-aliases-in-terminal)
+[alias vs. function in bash scripts](https://askubuntu.com/questions/163882/alias-vs-function-in-bash-scripts)
