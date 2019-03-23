@@ -179,12 +179,12 @@ alias desktop="cd ~/Desktop" # `desktop` will now execute `cd ~/Desktop`
 ### Functions
 Functions contains logic. In a function, you might make calls to several different programs. Here's a simple echo function
 
-This function executes a git add/commit/pull/push all at once, with commit message "$1"
+This function executes a git add/commit/pull/push in sequence upon successful completion of the previous command. Correct usage is `git_push "commit message"`
 ```bash
 function git_push() {
-  git add -A;
-  git commit -m "$1";
-  git pull --rebase;
+  git add -A && \
+  git commit -m "$1" && \
+  git pull --rebase && \
   git push;
 }
 ```
