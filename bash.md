@@ -212,7 +212,7 @@ done
 #### While Loops
 ```bash
 while conditional; do
-	# do something
+  # do something
 done
 ```
 
