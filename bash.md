@@ -182,7 +182,10 @@ Functions contains logic. In a function, you might make calls to several differe
 This function executes a git add/commit/pull/push all at once, with commit message "$1"
 ```bash
 function git_push() {
-	git add -A; git commit -m "$1"; git pull --rebase; git push;
+	git add -A;
+  git commit -m "$1";
+  git pull --rebase;
+  git push;
 }
 ```
 
