@@ -218,7 +218,7 @@ export VARIABLE=value # stores value as variable for this session
 ## Aliases
 Think of aliases as nicknames. You might have a command that you perform a lot but want to shorten.
 ```bash
-alias desktop="cd ~/Desktop" # `desktop` will now execute `cd ~/Desktop`
+alias desktop="cd ~/Desktop" # "desktop" will now execute "cd ~/Desktop"
 ```
 
 ## Functions
@@ -227,8 +227,8 @@ Functions contains logic. In a function, you might make calls to several differe
 This function executes a git add/commit/pull/push in sequence upon successful completion of the previous command. Correct usage is `git_push "commit message"`
 ```bash
 function git_push() {
-  git add -A && \
-  git commit -m "$1" && \
+  git add -A; \
+  git commit -m "$1"; \
   git pull --rebase && \
   git push;
 }
