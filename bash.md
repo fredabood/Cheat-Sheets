@@ -2,7 +2,7 @@
 
 ## Special Characters
 ```bash
-- # used to declare flags for functions, `cd -` changes to the previous directory
+- # used to declare flags for functions, "cd -" changes to the previous directory
 $variable # used to call variable
 # comment # starts a comment
 command1 && commad2 # command2 will run if the command1 succeeds
