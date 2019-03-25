@@ -40,6 +40,7 @@ command; # ends the command
 command1 | command2 # sends the stdout of command1 to the stdin of command2
 command > file # overwrites a file with the output of the command
 command >> file # appends the output of the command to the end of the file
+\ # escape special characters and allows for line breaks
 ```
 
 ## File Commands
