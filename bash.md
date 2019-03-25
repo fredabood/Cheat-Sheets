@@ -30,17 +30,17 @@
 ## Special Characters
 ```bash
 - # used to declare flags for functions, "cd -" changes to the previous directory
-$variable # used to call variable
+\ # escapes special characters and allows for line break
 # comment # starts a comment
-command1 && commad2 # command2 will run if the command1 succeeds
 . # the current directory
 ~ # the home directory
-[ conditional ] # evaluates the conditional
 command; # ends the command
+$variable # used to call variable
+command1 && commad2 # command2 will run if the command1 succeeds
+[ conditional ] # evaluates the conditional
 command1 | command2 # sends the stdout of command1 to the stdin of command2
 command > file # overwrites a file with the output of the command
 command >> file # appends the output of the command to the end of the file
-\ # escape special characters and allows for line breaks
 ```
 
 ## File Commands
