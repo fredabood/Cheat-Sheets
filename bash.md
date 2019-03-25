@@ -262,7 +262,7 @@ done
 ```
 
 # Sources
-* [Unix Power Tools][https://docstore.mik.ua/orelly/unix2.1/upt/ch08_19.htm]
+* [Unix Power Tools](https://docstore.mik.ua/orelly/unix2.1/upt/ch08_19.htm)
 * [Conquering The Command Line](http://conqueringthecommandline.com/book/basics)
 * [Rock the Command Line](https://towardsdatascience.com/rock-the-command-line-52c4b2ea34b7)
 * [Command Line Tricks For Data Scientists](https://medium.com/@kadek/command-line-tricks-for-data-scientists-c98e0abe5da)
