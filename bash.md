@@ -1,8 +1,8 @@
 # Bash Cheat Sheet
 
-### File Commands
+## File Commands
 
-#### Directory Contents
+### Directory Contents
 ```bash
 ls # directory listing
 ls -l # formatted directory listing
@@ -10,14 +10,14 @@ ls -a # directory listing with hidden files
 ls -al # formatted list with hidden files
 ```
 
-#### Navigating
+### Navigating
 ```bash
 cd dir # change directory to dir
 cd # change to home
 pwd # print working directory
 ```
 
-#### Deleting
+### Deleting
 ```bash
 rm file # delete file
 rm -r dir # delete directory
@@ -25,7 +25,7 @@ rm -f file # force remove file
 rm -rf dir # force remove directory
 ```
 
-#### Creating
+### Creating
 ```bash
 cp file1 file2 # copy file1 to file2
 mv file1 file2 # move file1 to file2
@@ -34,7 +34,7 @@ touch file # create or update file
 mkdir dir # create directory dir
 ```
 
-#### Reading
+### Reading
 ```bash
 cat > file # place standard input into file
 more file # output the contents of the file
@@ -44,21 +44,50 @@ tail file # output the last 10 lines of file
 tail -f file # output contents of file as it grows
 ```
 
-### SSH
+### Editing
+#### TR
+```bash
+# Converting a tab delimited file into commas
+cat tab_delimited.txt | tr "\\t" "," > comma_delimited.csv
+
+# Command chaining
+cat README.md | tr "[:punct:][:space:]" "\n" | tr "[:upper:]" "[:lower:]" > output.txt
+
+# Converting all upper case letters to lower case with regex
+cat filename.csv | tr '[A-Z]' '[a-z]'
+```
+TR Built In Variables
+
+| Variable | Definition |
+| :------- | :--------- |
+| [:alnum:] | all letters and digits |
+| [:alpha:] | all letters |
+| [:blank:] | all horizontal whitespace |
+| [:cntrl:] | all control characters |
+| [:digit:] | all digits |
+| [:graph:] | all printable characters, not including space |
+| [:lower:] | all lower case letters |
+| [:print:] | all printable characters, including space |
+| [:punct:] | all punctuation characters |
+| [:space:] | all horizontal or vertical whitespace |
+| [:upper:] | all upper case letters |
+| [:xdigit:] | all hexadecimal digits |
+
+## SSH
 ```bash
 ssh user@host # connect to host as user
 ssh -p port user@host # connect using port p
 ssh -D port user@host # connect and use bind port
 ```
 
-### Installation
+## Installation
 ```bash
 ./configure
 make
 make install
 ```
 
-### Network
+## Network
 ```bash
 ping host # ping host 'host'
 whois domain # get whois for domain
@@ -69,7 +98,7 @@ wget -c file # continue stopped download
 wget -r url # recursively download files from url
 ```
 
-### System Info
+## System Info
 ```bash
 date # show current date/time
 cal # show this month's calendar
@@ -88,7 +117,7 @@ whereis app # show possible locations of app
 which app # show which app will be run by default
 ```
 
-### Searching
+## Searching
 ```bash
 grep patter files # search for parttern in files
 grep -r pattern dir # search recursively for pattern in dir
@@ -96,7 +125,7 @@ command | grep pattern # search for pattern in the output of command
 locate file # fild all instances of file
 ```
 
-### Process Management
+## Process Management
 ```bash
 ps # display currently active process
 ps aux # ps with a lot of detail
@@ -107,7 +136,7 @@ fg # bring most recent job to foreground
 fg n # brings job n to foreground
 ```
 
-### File Permissions
+## File Permissions
 
 Add up the numbers corresponding to all desired permissions for each user/group,
 then concat the results.
@@ -126,15 +155,15 @@ chmod octal file # change permissions of file
   chmod 755 file # rw for owner, rx for group/world
 ```
 
-### Compression
+## Compression
 ```bash
 tar cf file.tar files - tar files into file.tar
 tar xf file.tar - untar into current directory
 tar tf file.tar - show contents of archive
 ```
-#### tar flags
+### tar flags
 | Flag | Use |
-| :-- | :-- |
+| :--- | :-- |
 | c | create archive |
 | t | table of contents |
 | x | extract |
@@ -151,7 +180,7 @@ gzip file # compress file and rename to file.gz
 gzip -d file.gz # decompress file.gz
 ```
 
-### Shortcuts
+## Shortcuts
 ```bash
 ctrl+c # halts current command
 ctrl+z # stops current command
@@ -165,18 +194,18 @@ ctrl+r # reverse lookup of previous commands
 exit # log out of current session
 ```
 
-### Variables
+## Variables
 ```bash
 export VARIABLE=value # stores value as variable for this session
 ```
 
-### Aliases
+## Aliases
 Think of aliases as nicknames. You might have a command that you perform a lot but want to shorten.
 ```bash
 alias desktop="cd ~/Desktop" # `desktop` will now execute `cd ~/Desktop`
 ```
 
-### Functions
+## Functions
 Functions contains logic. In a function, you might make calls to several different programs. Here's a simple echo function
 
 This function executes a git add/commit/pull/push in sequence upon successful completion of the previous command. Correct usage is `git_push "commit message"`
@@ -189,9 +218,9 @@ function git_push() {
 }
 ```
 
-### Control Flow
+## Control Flow
 
-#### If... Else...
+### If... Else...
 ```bash
 if conditional; then
   # do something
@@ -202,14 +231,14 @@ else
 fi
 ```
 
-#### For Loops
+### For Loops
 ```bash
 for item in iterable; do
   # do something
 done
 ```
 
-#### While Loops
+### While Loops
 ```bash
 while conditional; do
   # do something
@@ -217,5 +246,6 @@ done
 ```
 
 # Sources
+* [Conquering The Command Line](http://conqueringthecommandline.com/book/basics)
 * [Rock the Command Line](https://towardsdatascience.com/rock-the-command-line-52c4b2ea34b7)
 * [Command Line Tricks For Data Scientists](https://medium.com/@kadek/command-line-tricks-for-data-scientists-c98e0abe5da)
