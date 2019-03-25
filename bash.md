@@ -78,6 +78,7 @@ TR Built In Variables
 ssh user@host # connect to host as user
 ssh -p port user@host # connect using port p
 ssh -D port user@host # connect and use bind port
+ssh -t user@host "do something" # execute a command on a remote machine
 ```
 
 ## Installation
