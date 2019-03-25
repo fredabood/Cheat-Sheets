@@ -119,6 +119,16 @@ git init; git add .; git commit -m 'Initial Commit'; git remote add origin git@g
 ```bash
 git pull; git add *; git commit -m 'REPLACE ME WITH YOUR COMMIT MESSAGE'; git push;
 ```
+
+#### Create a function that does all git push steps
+```bash
+function git_push() {
+  git add -A; \
+  git commit -m "$1"; \
+  git pull --rebase && \
+  git push;
+}
+```
 --------
 
 ## Bonus: Installing the Bash kernel for Jupyter
