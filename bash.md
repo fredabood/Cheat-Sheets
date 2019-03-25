@@ -1,5 +1,30 @@
-# Bash Cheat Sheet
+# [Bash Cheat Sheet](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#bash-cheat-sheet)
 
+1. [Special Characters](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#special-characters)
+2. [File Commands](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#file-commands)
+* [Directory Contents](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#directory-contents)
+* [Navigating](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#navigating)
+* [Deleting](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#deleting)
+* [Creating](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#creating)
+* [Reading](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#reading)
+* [Editing](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#editing)
+3. [SSH](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#ssh)
+4. [Installation](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#installation)
+5. [Network](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#network)
+6. [System Info](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#system-info)
+7. [Searching](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#searching)
+8. [Process Management](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#process-management)
+9. [File Permissions](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#file-permissions)
+10. [Compression](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#compression)
+11. [Shortcuts](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#shortcuts)
+12. [Variables](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#variables)
+13. [Aliases](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#aliases)
+14. [Functions](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#functions)
+15. [Control Flow](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#control-flow)
+* [If... Else...](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#if-else)
+* [For Loops](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#for-loops)
+* [While Loops](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#while-loops)
+[Sources](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#sources)
 ## Special Characters
 ```bash
 - # used to declare flags for functions, "cd -" changes to the previous directory
@@ -260,7 +285,7 @@ while conditional; do
   # do something
 done
 ```
-
+-----------------------------------------------
 # Sources
 * [Unix Power Tools](https://docstore.mik.ua/orelly/unix2.1/upt/ch08_19.htm)
 * [Conquering The Command Line](http://conqueringthecommandline.com/book/basics)
