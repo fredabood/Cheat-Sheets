@@ -1,5 +1,6 @@
-# [Bash Cheat Sheet](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#bash-cheat-sheet)
+# Bash Cheat Sheet
 
+## Table of Contents
 1. [Special Characters](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#special-characters)
 2. [File Commands](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#file-commands)
     * [Directory Contents](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#directory-contents)
@@ -25,6 +26,7 @@
     * [For Loops](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#for-loops)
     * [While Loops](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#while-loops)
 [Sources](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#sources)
+--------------------------------------------------------------------------------
 ## Special Characters
 ```bash
 - # used to declare flags for functions, "cd -" changes to the previous directory
@@ -285,7 +287,7 @@ while conditional; do
   # do something
 done
 ```
------------------------------------------------
+--------------------------------------------------------------------------------
 # Sources
 * [Unix Power Tools](https://docstore.mik.ua/orelly/unix2.1/upt/ch08_19.htm)
 * [Conquering The Command Line](http://conqueringthecommandline.com/book/basics)
