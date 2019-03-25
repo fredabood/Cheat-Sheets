@@ -1,5 +1,20 @@
 # Bash Cheat Sheet
 
+## Special Characters
+```bash
+- # used to declare flags for functions, `cd -` changes to the previous directory
+$variable # used to call variable
+# comment # starts a comment
+command1 && commad2 # command2 will run if the command1 succeeds
+. # the current directory
+~ # the home directory
+[ conditional ] # evaluates the conditional
+command; # ends the command
+command1 | command2 # sends the stdout of command1 to the stdin of command2
+command > file # overwrites a file with the output of the command
+command >> file # appends the output of the command to the end of the file
+```
+
 ## File Commands
 
 ### Directory Contents
@@ -247,6 +262,8 @@ done
 ```
 
 # Sources
+* [Unix Power Tools][https://docstore.mik.ua/orelly/unix2.1/upt/ch08_19.htm]
 * [Conquering The Command Line](http://conqueringthecommandline.com/book/basics)
 * [Rock the Command Line](https://towardsdatascience.com/rock-the-command-line-52c4b2ea34b7)
 * [Command Line Tricks For Data Scientists](https://medium.com/@kadek/command-line-tricks-for-data-scientists-c98e0abe5da)
+* [Ten Things I Wish I’d Known About bash](https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/)
