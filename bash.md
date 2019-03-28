@@ -25,6 +25,7 @@
     * [For Loops](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#for-loops)
     * [While Loops](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#while-loops)
 15. [Functions](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#functions)
+
 [Sources](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#sources)
 --------------------------------------------------------------------------------
 ## Special Characters
