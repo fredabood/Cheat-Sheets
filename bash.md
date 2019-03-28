@@ -295,3 +295,5 @@ done
 * [Rock the Command Line](https://towardsdatascience.com/rock-the-command-line-52c4b2ea34b7)
 * [Command Line Tricks For Data Scientists](https://medium.com/@kadek/command-line-tricks-for-data-scientists-c98e0abe5da)
 * [Ten Things I Wish I’d Known About bash](https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/)
+* [Bash: Argument Parsing](https://medium.com/@Drew_Stokes/bash-argument-parsing-54f3b81a6a8f)
+* [How to get arguments with flags in Bash](https://stackoverflow.com/questions/7069682/how-to-get-arguments-with-flags-in-bash/7069755#7069755)
