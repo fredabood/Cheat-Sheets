@@ -20,11 +20,11 @@
 11. [Shortcuts](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#shortcuts)
 12. [Variables](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#variables)
 13. [Aliases](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#aliases)
-14. [Functions](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#functions)
-15. [Control Flow](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#control-flow)
+14. [Control Flow](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#control-flow)
     * [If... Else...](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#if-else)
     * [For Loops](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#for-loops)
     * [While Loops](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#while-loops)
+15. [Functions](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#functions)
 [Sources](https://github.com/fredabood/Cheat-Sheets/blob/master/bash.md#sources)
 --------------------------------------------------------------------------------
 ## Special Characters
@@ -249,19 +249,6 @@ Think of aliases as nicknames. You might have a command that you perform a lot b
 alias desktop="cd ~/Desktop" # "desktop" will now execute "cd ~/Desktop"
 ```
 
-## Functions
-Functions contains logic. In a function, you might make calls to several different programs. Here's a simple echo function
-
-This function executes a git add/commit/pull/push in sequence upon successful completion of the previous command. Correct usage is `git_push "commit message"`
-```bash
-function git_push() {
-  git add -A; \
-  git commit -m "$1"; \
-  git pull --rebase && \
-  git push;
-}
-```
-
 ## Control Flow
 
 ### If... Else...
@@ -287,6 +274,59 @@ done
 while conditional; do
   # do something
 done
+```
+
+## Functions
+Functions contains logic. In a function, you might make calls to several different programs. Here's a simple echo function
+
+This function executes a git add/commit/pull/push in sequence upon successful completion of the previous command. Correct usage is `git_push "commit message"`
+```bash
+function git_push() {
+  git add -A; \
+  git commit -m "$1"; \
+  git pull --rebase && \
+  git push;
+}
+```
+
+### Argument Parsing
+ 
+The while loop within the function loops through all positional arguments, popping the variable in the $1 position off the array, and checking if it's a custom flag. If it is a custom flag,  the next positional argument gets appended to the variable assigned.
+
+Any positional arguments that remain after all flags are handled are appended to the `PARAMS` variable. Then `eval set -- "$PARAMS"` assigns `PARAMS` back as positional arguments, so arguments can be accessed in their original order (minus the arguments that were assigned via flags.
+
+So if you ran `do_something -f first -s second third fourth`, `first` would get assined to `FARG`, `second` would get assigned to `SARG`. `third` and `fourth` will be accessible through the `$1` and `$2` positional arguments, respectively.
+
+```bash
+function do_something() {
+   PARAMS=""
+   while (( "$#" )); do
+     case "$1" in
+       -f|--flag-with-argument)
+         FARG=$2
+         shift 2
+         ;;
+       -s|--some-other-flag)
+         SARG=$2
+         shift 2
+         ;;
+       --) # end argument parsing
+         shift
+         break
+         ;;
+       -*|--*=) # unsupported flags
+         echo "Error: Unsupported flag $1" >&2
+         exit 1
+         ;;
+       *) # preserve positional arguments
+         PARAMS="$PARAMS $1"
+         shift
+         ;;
+     esac
+   done
+   # set positional arguments in their proper place
+   eval set -- "$PARAMS"
+}
 ```
 --------------------------------------------------------------------------------
 # Sources
