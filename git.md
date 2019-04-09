@@ -1,6 +1,8 @@
 # Git Cheat Sheet
 
-### [Relevant XKCD](https://xkcd.com/1597/)
+#### [Relevant XKCD](https://xkcd.com/1597/)
+
+[Learn Git Branching](https://learngitbranching.js.org/) is the best resource I've found to learn Git. It has a terminal and a visual of the Git tree that allows you to see the effect of your code and compare it to your goal. I highly recommend it for anyone who's new to Git.
 
 ## Create a folder for all your repositories
 
